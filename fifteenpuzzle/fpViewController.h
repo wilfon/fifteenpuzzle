@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "fpPuzzleView.h"
 
-@interface fpViewController : UIViewController
+@interface fpViewController : UIViewController <fpPuzzleViewDelegate>
 
 @end

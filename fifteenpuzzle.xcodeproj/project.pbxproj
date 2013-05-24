@@ -24,6 +24,8 @@
 		BEE7E4BF174F1AA100D8B85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE7E497174F1AA100D8B85F /* Foundation.framework */; };
 		BEE7E4C7174F1AA100D8B85F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE7E4C5174F1AA100D8B85F /* InfoPlist.strings */; };
 		BEE7E4CA174F1AA100D8B85F /* fifteenpuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7E4C9174F1AA100D8B85F /* fifteenpuzzleTests.m */; };
+		BEE7E4D5174F1B0900D8B85F /* fpPuzzleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7E4D4174F1B0900D8B85F /* fpPuzzleView.m */; };
+		BEE7E4D9174F2B3600D8B85F /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7E4D8174F2B3600D8B85F /* UIImage+Resize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		BEE7E4C6174F1AA100D8B85F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEE7E4C8174F1AA100D8B85F /* fifteenpuzzleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fifteenpuzzleTests.h; sourceTree = "<group>"; };
 		BEE7E4C9174F1AA100D8B85F /* fifteenpuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fifteenpuzzleTests.m; sourceTree = "<group>"; };
+		BEE7E4D3174F1B0900D8B85F /* fpPuzzleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fpPuzzleView.h; sourceTree = "<group>"; };
+		BEE7E4D4174F1B0900D8B85F /* fpPuzzleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fpPuzzleView.m; sourceTree = "<group>"; };
+		BEE7E4D7174F2B3600D8B85F /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		BEE7E4D8174F2B3600D8B85F /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		BEE7E49B174F1AA100D8B85F /* fifteenpuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				BEE7E4D6174F2B0D00D8B85F /* external */,
 				BEE7E4A4174F1AA100D8B85F /* fpAppDelegate.h */,
 				BEE7E4A5174F1AA100D8B85F /* fpAppDelegate.m */,
 				BEE7E4AD174F1AA100D8B85F /* fpViewController.h */,
@@ -126,6 +133,8 @@
 				BEE7E4B0174F1AA100D8B85F /* fpViewController_iPhone.xib */,
 				BEE7E4B3174F1AA100D8B85F /* fpViewController_iPad.xib */,
 				BEE7E49C174F1AA100D8B85F /* Supporting Files */,
+				BEE7E4D3174F1B0900D8B85F /* fpPuzzleView.h */,
+				BEE7E4D4174F1B0900D8B85F /* fpPuzzleView.m */,
 			);
 			path = fifteenpuzzle;
 			sourceTree = "<group>";
@@ -161,6 +170,16 @@
 				BEE7E4C5174F1AA100D8B85F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEE7E4D6174F2B0D00D8B85F /* external */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7E4D7174F2B3600D8B85F /* UIImage+Resize.h */,
+				BEE7E4D8174F2B3600D8B85F /* UIImage+Resize.m */,
+			);
+			name = external;
+			path = ../external;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +297,8 @@
 				BEE7E4A2174F1AA100D8B85F /* main.m in Sources */,
 				BEE7E4A6174F1AA100D8B85F /* fpAppDelegate.m in Sources */,
 				BEE7E4AF174F1AA100D8B85F /* fpViewController.m in Sources */,
+				BEE7E4D5174F1B0900D8B85F /* fpPuzzleView.m in Sources */,
+				BEE7E4D9174F2B3600D8B85F /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +489,7 @@
 				BEE7E4CF174F1AA100D8B85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE7E4D0174F1AA100D8B85F /* Build configuration list for PBXNativeTarget "fifteenpuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +498,7 @@
 				BEE7E4D2174F1AA100D8B85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
