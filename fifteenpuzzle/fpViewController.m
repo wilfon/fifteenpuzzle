@@ -47,7 +47,6 @@
     [self.view addSubview:activityWheel];
     [activityWheel startAnimating];
     
-    self.label.text = @"Tap tile or swipe";
     
     // grab image in the background. using external code to do resizing...
     dispatch_queue_t queue = dispatch_queue_create("myQueue", NULL);
@@ -60,6 +59,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             //self.imageView.image = croppedImage;
             [self.puzzleView setImage:croppedImage];
+            self.label.text = @"Tap tile or swipe";
             [activityWheel removeFromSuperview];
         });
     });
